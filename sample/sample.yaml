@@ -12,11 +12,11 @@ icon-running: C:\path\sample\running.ico
 icon-stopped: C:\path\sample\stopped.ico
 
 # if true, the service will be started immediately on TrayAppControl start
-# if false, you have menually start them via context menu
+# if false, you have to manually start it via context menu
 start-immediately: false
 
 # if true, the service will be stopped when TrayAppControl app is being closed
-#    (either per user request or shutdown/reboot/logout)
+#    (either per user request or on shutdown/reboot/logout)
 # if false, the service will be left "as is"
 stop-on-shutdown: true
 # NOTE: do not rely on this feature, it is not guaranteed that it will work in 100% cases
