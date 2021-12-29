@@ -2,7 +2,7 @@
 [![MIT license](https://img.shields.io/github/license/tushev/trayappcontrol)](https://github.com/tushev/trayappcontrol/blob/main/LICENSE.txt) 
 ![Language: C#](https://img.shields.io/badge/lang-C%23-brightgreen) ![.NET Framework: 4.7.2](https://img.shields.io/badge/.NET%20Framework-4.7.2-blueviolet)
 ![OS: Windows](https://img.shields.io/badge/OS-Windows-blue)
-                                                                                                   [![CodeFactor](https://www.codefactor.io/repository/github/tushev/trayappcontrol/badge)](https://www.codefactor.io/repository/github/tushev/trayappcontrol)
+                                                                                      [![CodeFactor](https://www.codefactor.io/repository/github/tushev/trayappcontrol/badge)](https://www.codefactor.io/repository/github/tushev/trayappcontrol)
 
 A handy tool that allows to simultaneously start and stop a set of processes from system tray[^2].
 
