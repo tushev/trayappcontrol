@@ -1,0 +1,9 @@
+This application contains the following 3rd party elements:
+
+* Hardcodet.NotifyIcon.Wpf                                      The Code Project Open License (CPOL) 1.02
+* YamlDotNet                                                    MIT License
+* https://www.iconfinder.com/icons/7122365/cog_icon             MIT License
+* https://www.iconfinder.com/icons/6586103/music_play_icon      Iconfinder "Free for commercial use" license
+  (sample\running.ico)
+* https://www.iconfinder.com/icons/6586139/record_video_icon    Iconfinder "Free for commercial use" license
+  (sample\stopped.ico)

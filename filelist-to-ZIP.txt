@@ -1,0 +1,10 @@
+3rdparty_licensing\3RDPARTY.txt
+3rdparty_licensing\CPOL-YamlDotNet.txt
+3rdparty_licensing\MIT-Hardcodet.NotifyIcon.Wpf.txt
+sample\sample.yaml
+sample\running.ico
+sample\stopped.ico
+src\bin\Release\net472\TrayAppControl.exe
+src\bin\Release\net472\Hardcodet.NotifyIcon.Wpf.dll
+src\bin\Release\net472\YamlDotNet.dll
+src\bin\Release\net472\LICENSE.txt

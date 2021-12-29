@@ -1,0 +1,45 @@
+# This file defines a set of executables (a "service") that will be controlled by TrayAppControl
+#
+# DO NOT USE TAB characters, it is prohibited by YAML standard! USE spaces instead
+#
+# DO NOT USE double-quotes (") and single backslashes (\) **TOGETHER** for paths! It will lead to errors
+# USE either C:\path\path OR 'C:\path\path' OR "C:\\path\\path"
+#
+# It is recommended to use absolute paths with extensions (i.e. C:\httpd\bin\httpd.exe, not ..\httpd\bin\httpd )
+
+service-name: Example Service
+icon-running: C:\path\sample\running.ico
+icon-stopped: C:\path\sample\stopped.ico
+
+# if true, the service will be started immediately on TrayAppControl start
+# if false, you have menually start them via context menu
+start-immediately: false
+
+# if true, the service will be stopped when TrayAppControl app is being closed
+#    (either per user request or shutdown/reboot/logout)
+# if false, the service will be left "as is"
+stop-on-shutdown: true
+# NOTE: do not rely on this feature, it is not guaranteed that it will work in 100% cases
+# NOTE: no error messages will be displayed ever on shutdown
+
+
+# these apps will be "managed" by TrayAppControl, i.e.
+# on "Start" action these app will be started and their process handles will be "remembered", 
+# so on "Stop" action their processes will be terminated
+managed-apps:
+  - command:     C:\path\app1.exe
+    arguments:   -D php8
+    workdir:     C:\someotherpath
+    hide-window: true
+
+  - command:	 C:\path\app2.exe
+
+# these commands will be executed on "Start" action "as is", without remembering process handles
+on-start:
+  - command: 		C:\path\app3.exe 
+    arguments: 		-k start
+    hide-window: 	true
+
+# these commands will be simply executed on "Stop" action "as is"
+on-stop:
+  -	command:		C:\path\app4.exe

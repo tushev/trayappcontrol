@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TrayAppControl": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\Development\\Personal\\TrayAppControl\\web.yaml"
+    }
+  }
+}
