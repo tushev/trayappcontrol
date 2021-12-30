@@ -18,7 +18,7 @@ It is very handy in case you work with apps that cannot hide their console windo
 ## ✔ Usage
 * [Download](https://github.com/tushev/trayappcontrol/releases) the app, extract the archive somewhere _(or compile the code)_.
 * Create an YAML file that describes your service (see [below](#example-configuration))
-* Create a shortcut (in `Startup Apps` if desired) or a `.cmd` that launches the app:<br>`TrayAppControl.exe C:\full\path\to\service.yaml`
+* Create a shortcut or Windows Scheduler task or a `.cmd` that launches the app:<br>`TrayAppControl.exe C:\full\path\to\service.yaml`
 
 ℹ Tested on Windows 10 21H1. Not tested on other versions.
 
