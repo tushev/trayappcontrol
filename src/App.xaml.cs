@@ -32,7 +32,13 @@ namespace TrayAppControl
                 return;
             }
 
-            string YAMLFile = e.Args.First();
+            bool ForceStart = false;
+
+            string first = e.Args.First();
+            if (first.ToLowerInvariant() == "--forcestart")
+                ForceStart = true;
+
+            string YAMLFile = ForceStart ? e.Args.ElementAt(1) : first;
 
             try
             {
@@ -53,7 +59,7 @@ namespace TrayAppControl
             SetIcon(ManagedService.IconStopped);
             ManagedService.IconChanged += (s, ea) => { SetIcon(((IconChangedEventArgs)ea).Icon);  };
 
-            if (ManagedService.StartServicesAutomatically)
+            if (ManagedService.StartServicesAutomatically || ForceStart)
                 vm.StartCommand.Execute(vm);
         }
         protected override void OnExit(ExitEventArgs e)

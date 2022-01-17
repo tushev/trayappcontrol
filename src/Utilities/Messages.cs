@@ -39,7 +39,7 @@ namespace TrayAppControl
         static public void ShowUsageInfo()
         {
             var ans = MessageBox.Show(
-                $"Usage: {Process.GetCurrentProcess().ProcessName}.exe C:\\path\\file.yaml{Environment.NewLine}{Environment.NewLine}"+
+                $"Usage: {Process.GetCurrentProcess().ProcessName}.exe [--forcestart] C:\\path\\file.yaml{Environment.NewLine}{Environment.NewLine}"+
                 "Would you like to open app's website for more info?", 
                 "TrayAppControl",
                 MessageBoxButton.YesNo, MessageBoxImage.Information, MessageBoxResult.No, MessageBoxOptions.DefaultDesktopOnly);
